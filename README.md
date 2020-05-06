@@ -3,14 +3,21 @@
 ## 修改ip
 $sudo nano /etc/netplan/00-installer-config.yaml
 
+# This is the network config written by 'subiquity'
 network:
   ethernets:
-    ens33:     #配置的网卡的名称
-      addresses: [192.168.31.215/24]    #配置的静态ip地址和掩码
-      dhcp4: no    #关闭DHCP，如果需要打开DHCP则写yes
+    ens16:
+      dhcp4: no
+      addresses: [10.0.1.200/24]
       optional: true
-      gateway4: 192.168.31.1    #网关地址
+      gateway4: 10.0.1.1
       nameservers:
-         addresses: [192.168.31.1,114.114.114.114]    #DNS服务器地址，多个DNS服务器地址需要用英文逗号分隔开
+        addresses: [10.0.0.1,223.5.5.5]
+    ens17:
+      dhcp4: no
+      addresses: [10.0.0.2/24]
+      optional: true
+      nameservers:
+        addresses: [10.0.0.1,223.5.5.5]
   version: 2
-  renderer: networkd    #指定后端采用systemd-networkd或者Network Manager，可不填写则默认使用systemd-workd
+
