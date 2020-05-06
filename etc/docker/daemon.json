@@ -1,0 +1,11 @@
+{
+ "bip”:“10.10.10.1/24”,
+ "default-gateway": "10.0.0.1",
+ "mtu":1480,
+ "ipv6": true,
+ "fixed-cidr": "10.10.10.1/25",
+ "fixed-cidr-v6": "2001:db8::/64",
+ "default-gateway-v6": "2001:db8:abcd::89",
+ "dns":["114.114.114.114","223.5.5.5"],
+ "registry-mirrors" : [ "https://docker.mirrors.ustc.edu.cn", "https://sn85pe6o.mirror.aliyuncs.com"]
+}
