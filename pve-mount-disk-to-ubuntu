@@ -1,6 +1,6 @@
 ## PVE挂载硬盘到Ubuntu ##
 
-		root@pve:~# ls /dev/disk/by-id #bash
+		root@pve:~# ls /dev/disk/by-id 
 		ata-SanDisk_SSD_i110_128GB_150900134281        ata-WDC_WD20SPZX-75UA7T0_WXN1E6876LM9-part1  dm-uuid-LVM-iU5cipxY0pQgruR18qfNaoNGECuJxMCS7vFIrelm6G40FYPaOt2iokd3rMKUyf6d  wwn-0x50014ee6b3bd9bfd	wwn-0x5001b4402dee4d89-part3
 		ata-SanDisk_SSD_i110_128GB_150900134281-part1  dm-name-pve-root				    dm-uuid-LVM-iU5cipxY0pQgruR18qfNaoNGECuJxMCSHWf80igDoYw0ABP02z9cVoQ2TlXOy3Bi  wwn-0x50014ee6b3bd9bfd-part1
 		ata-SanDisk_SSD_i110_128GB_150900134281-part2  dm-name-pve-swap				    dm-uuid-LVM-iU5cipxY0pQgruR18qfNaoNGECuJxMCSkS4gTXHHKMmuFc6JOK5MqQ37B80dfRu5  wwn-0x5001b4402dee4d89
