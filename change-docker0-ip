@@ -1,0 +1,14 @@
+ /etc/docker/daemon.json
+ 
+{
+	"ipv6": true,
+	"fixed-cidr-v6": "2001:db8:1::/64",
+	"bip": "10.10.1.1/24",
+	"registry-mirrors" : ["https://docker.mirrors.ustc.edu.cn", "https://sn85pe6o.mirror.aliyuncs.com"]
+}
+
+
+$ sudo service docker stop
+$ sudo ip link set dev docker0 down
+$ sudo brctl delbr docker0
+$ sudo service docker restart
